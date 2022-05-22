@@ -91,7 +91,7 @@ namespace TestWPF
             img = sender as Image;
             if (img != null && e.LeftButton == MouseButtonState.Pressed)
             {
-                DragDrop.DoDragDrop(MyImage,
+                DragDrop.DoDragDrop(img,
                          img.Source,
                          DragDropEffects.Copy);
                 
